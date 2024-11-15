@@ -162,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               SizedBox(
-                height: 350,
+                height: 400,
                 child: welcomeController.isLoadingData.value? const Center(child: CircularProgressIndicator(),) : ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: welcomeController.welcome?.products.length,

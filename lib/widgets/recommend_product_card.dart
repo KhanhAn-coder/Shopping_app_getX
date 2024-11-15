@@ -38,8 +38,10 @@ class RecommendProductCard extends StatelessWidget {
               const SizedBox(width: 20,),
               SizedBox(
                 height: 80,
+                width: 200,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(product.title,
                       style: const TextStyle(
@@ -47,7 +49,6 @@ class RecommendProductCard extends StatelessWidget {
                         fontWeight: FontWeight.w500
                       ),
                     ),
-                    const SizedBox(height: 20,),
                     Text('\$ ${product.price.toString()}',
                       style: const TextStyle(
                         fontSize: 20,
